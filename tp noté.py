@@ -2,6 +2,9 @@
 # les biblithéques nécessaires
 import pandas as pd
 import numpy as np
+import streamlit as st
+import joblib
+import tensorflow as tf
 import matplotlib.pyplot as plt
 from PIL import Image
 
