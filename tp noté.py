@@ -1,13 +1,10 @@
-# %% md
-# Premiére partie
-# %%
+
 # les biblithéques nécessaires
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
 from PIL import Image
-import os
+
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
@@ -129,7 +126,7 @@ def plot_samples_from_parent_folder(parent_folder, n=3):
 
 
 # Utilisation
-parent_folder = r'C:\Users\celia\Esic TP noté ILDE\TP images'  # dossier parent contenant sain/benin/malin
+parent_folder = r'jsrt_subset.zip'  # dossier parent contenant sain/benin/malin
 plot_samples_from_parent_folder(parent_folder, n=3)
 
 # %% md
@@ -188,18 +185,7 @@ results_df = pd.DataFrame({
 
 results_df.to_csv("predictions_logistic_regression.csv", index=False)
 print("Les prédictions ont été sauvegardées dans 'predictions_logistic_regression.csv'")
-# %% raw
-Le
-2
-eme
-modéle
-# %% raw
-1
-er
-version: Classification
-d
-'images
-# %%
+
 import os
 import numpy as np
 import pandas as pd
@@ -309,10 +295,7 @@ results_df = pd.DataFrame({
 results_df.to_csv("predictions_cnn.csv", index=False)
 print("Les prédictions CNN ont été sauvegardées dans 'predictions_cnn.csv'")
 # %% raw
-2
-éme
-version
-# %%
+
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
